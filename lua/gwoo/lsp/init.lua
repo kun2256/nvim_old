@@ -1,18 +1,5 @@
 -- Setup sumneko_lua with lua-dev
 require('nvim-lsp-setup').setup({
-    servers = {
-        sumneko_lua = require('lua-dev').setup({
-            lspconfig = {
-                on_attach = function(client, _)
-                    -- Avoiding LSP formatting conflicts.
-                    -- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
-                    require('nvim-lsp-setup.utils').disable_formatting(client)
-                end,
-            },
-        }),
-    }
-})
-require('nvim-lsp-setup').setup({
     -- Default mappings
     -- gD = 'lua vim.lsp.buf.declaration()',
     -- gd = 'lua vim.lsp.buf.definition()',
@@ -55,4 +42,14 @@ require('nvim-lsp-setup').setup({
         --     },
         -- },
     },
+
+    sumneko_lua = require('lua-dev').setup({
+        lspconfig = {
+            on_attach = function(client, _)
+                -- Avoiding LSP formatting conflicts.
+                -- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
+                require('nvim-lsp-setup.utils').disable_formatting(client)
+            end,
+        },
+    }),
 })
