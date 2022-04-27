@@ -84,10 +84,10 @@ _G.packer_plugins = {
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/asynctasks.vim",
     url = "https://github.com/skywind3000/asynctasks.vim"
   },
-  aurora = {
+  ["bufferline.nvim"] = {
     loaded = true,
-    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/aurora",
-    url = "https://github.com/ray-x/aurora"
+    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -188,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["omni.vim"] = {
+    loaded = true,
+    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/omni.vim",
+    url = "https://github.com/yonlu/omni.vim"
   },
   ["packer.nvim"] = {
     loaded = true,

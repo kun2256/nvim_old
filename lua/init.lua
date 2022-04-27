@@ -14,3 +14,5 @@ require("gwoo.toggleterm-config")
 require("gwoo.lsp")
 -- cmp
 require("gwoo.cmp-config")
+-- buffer栏
+require("gwoo.bufferline-config")

@@ -6,7 +6,7 @@ end
 _.startup(function()
     use 'wbthomason/packer.nvim'
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    use {'ray-x/aurora'}
+    use {'yonlu/omni.vim'}
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -17,8 +17,8 @@ _.startup(function()
     requires = {
         'neovim/nvim-lspconfig',
         'williamboman/nvim-lsp-installer',
+       }
     }
-}
     use {'hrsh7th/nvim-cmp'}
     use {'hrsh7th/cmp-nvim-lua'}
     use {'onsails/lspkind-nvim'}
@@ -36,4 +36,6 @@ _.startup(function()
     }
     use {"saadparwaiz1/cmp_luasnip"}
     use {'skywind3000/asyncrun.vim',requires={'skywind3000/asynctasks.vim'}}
+    -- using packer.nvim
+    use {'akinsho/bufferline.nvim'}
 end)

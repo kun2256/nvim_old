@@ -53,4 +53,5 @@ nmap <leader>r <Cmd>AsyncTask file-run<cr>
 nmap <leader>d <Cmd>AsyncTask file-build<cr>
 nmap <leader>w <Cmd>w<cr>
 nmap <leader>q <Cmd>q<cr>
-
+nmap b <Cmd>BufferLinePick<cr>
+nmap cb <Cmd>BufferLinePickClose<cr>
