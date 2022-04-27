@@ -1,6 +1,6 @@
 -- 其他配置
 require("gwoo.other")
--- packer
+-- packer 插件管理器
 require("gwoo.packer-config")
 -- treestiter ts高亮解释器
 require("gwoo.treesitter-config")
@@ -16,3 +16,5 @@ require("gwoo.lsp")
 require("gwoo.cmp-config")
 -- buffer栏
 require("gwoo.bufferline-config")
+-- 文件树 tree
+require("gwoo.tree-config")

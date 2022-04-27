@@ -55,3 +55,5 @@ nmap <leader>w <Cmd>w<cr>
 nmap <leader>q <Cmd>q<cr>
 nmap b <Cmd>BufferLinePick<cr>
 nmap cb <Cmd>BufferLinePickClose<cr>
+nmap s <C-w>
+nmap tr <Cmd>NvimTreeToggle<cr>
