@@ -57,4 +57,4 @@ nmap b <Cmd>BufferLinePick<cr>
 nmap cb <Cmd>BufferLinePickClose<cr>
 nmap s <C-w>
 nmap tr <Cmd>NvimTreeToggle<cr>
-
+nmap L <Cmd>UndotreeToggle<cr>sh

@@ -27,3 +27,5 @@ require("gwoo.dashboard-config")
 require("gwoo.notify-config")
 -- 代码片段
 require("gwoo.luasnip-config")
+-- 补全括号
+require("gwoo.autopairs-config")

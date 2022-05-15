@@ -250,6 +250,11 @@ _G.packer_plugins = {
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
   ["vim-clap"] = {
     loaded = true,
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/vim-clap",

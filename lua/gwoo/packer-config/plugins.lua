@@ -99,4 +99,10 @@ _.startup(function()
   }
   use { "saadparwaiz1/cmp_luasnip" }
 
+    -- 记录树 
+  use { "mbbill/undotree"}
+
+  -- 补全括号
+  use {"windwp/nvim-autopairs"}
+  
 end)
