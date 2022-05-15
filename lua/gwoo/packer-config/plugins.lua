@@ -12,6 +12,8 @@ _.startup(function()
 
     -- theme 主题
     use {'yonlu/omni.vim'}
+    use {'rcarriga/nvim-notify'}
+
 
     -- 状态栏
     use {
@@ -28,6 +30,7 @@ _.startup(function()
         'williamboman/nvim-lsp-installer',
        }
     }
+    use {'ray-x/lsp_signature.nvim'}
     use {'hrsh7th/nvim-cmp'}
     use {'hrsh7th/cmp-nvim-lua'}
     use {'onsails/lspkind-nvim'}
@@ -46,6 +49,20 @@ _.startup(function()
     use {"saadparwaiz1/cmp_luasnip"}
     use {'skywind3000/asyncrun.vim',requires={'skywind3000/asynctasks.vim'}}
 
+    -- nvim-cmp
+  use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
+  use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
+  use 'hrsh7th/cmp-path'     -- { name = 'path' }
+  use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
+  use 'hrsh7th/nvim-cmp'
+  -- vsnip
+  use 'hrsh7th/cmp-vsnip'    -- { name = 'vsnip' }
+  use 'hrsh7th/vim-vsnip'
+  use 'rafamadriz/friendly-snippets'
+  -- lspkind
+  use 'onsails/lspkind-nvim'
+
+
     --  buffer栏
     use {'akinsho/bufferline.nvim'}
 
@@ -54,5 +71,32 @@ _.startup(function()
         'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons'
     }
+
+    -- 远程编辑
+ use {
+  'chipsenkbeil/distant.nvim',
+  config = function()
+    require('distant').setup {
+      -- Applies Chip's personal settings to every machine you connect to
+      --
+      -- 1. Ensures that distant servers terminate with no connections
+      -- 2. Provides navigation bindings for remote directories
+      -- 3. Provides keybinding to jump into a remote file's parent directory
+      ['*'] = require('distant.settings').chip_default()
+    }
+  end
+}
+
+    -- 主页插件
+    use {'glepnir/dashboard-nvim'}
+    use {'liuchengxu/vim-clap'}
+    use {'junegunn/fzf.vim'}
+    use {'nvim-telescope/telescope.nvim'}
+
+    -- 代码片段
+    use { 'L3MON4D3/LuaSnip',
+    requires = { 'rafamadriz/friendly-snippets' }
+  }
+  use { "saadparwaiz1/cmp_luasnip" }
 
 end)
