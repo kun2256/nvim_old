@@ -23,7 +23,7 @@ local servers_lsp = {
   "texlab",
   "jsonls",
   "vuels",
-  "gopls",
+  --"gopls",
   "clangd",
   "sumneko_lua",
   --"csharp_ls",

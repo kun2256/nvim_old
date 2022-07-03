@@ -24,11 +24,11 @@ _.startup(function()
 
     -- lsp代码补全
     use {
-    'junnplus/nvim-lsp-setup',
-    requires = {
-        'neovim/nvim-lspconfig',
-        'williamboman/nvim-lsp-installer',
-       }
+        'junnplus/nvim-lsp-setup',
+        requires = {
+            'neovim/nvim-lspconfig',
+            'williamboman/nvim-lsp-installer',
+        }
     }
     use {'ray-x/lsp_signature.nvim'}
     use {'hrsh7th/nvim-cmp'}
@@ -50,17 +50,17 @@ _.startup(function()
     use {'skywind3000/asyncrun.vim',requires={'skywind3000/asynctasks.vim'}}
 
     -- nvim-cmp
-  use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
-  use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
-  use 'hrsh7th/cmp-path'     -- { name = 'path' }
-  use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
-  use 'hrsh7th/nvim-cmp'
-  -- vsnip
-  use 'hrsh7th/cmp-vsnip'    -- { name = 'vsnip' }
-  use 'hrsh7th/vim-vsnip'
-  use 'rafamadriz/friendly-snippets'
-  -- lspkind
-  use 'onsails/lspkind-nvim'
+    use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
+    use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
+    use 'hrsh7th/cmp-path'     -- { name = 'path' }
+    use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
+    use 'hrsh7th/nvim-cmp'
+    -- vsnip
+    use 'hrsh7th/cmp-vsnip'    -- { name = 'vsnip' }
+    use 'hrsh7th/vim-vsnip'
+    use 'rafamadriz/friendly-snippets'
+    -- lspkind
+    use 'onsails/lspkind-nvim'
 
 
     --  buffer栏
@@ -73,19 +73,19 @@ _.startup(function()
     }
 
     -- 远程编辑
- use {
-  'chipsenkbeil/distant.nvim',
-  config = function()
-    require('distant').setup {
-      -- Applies Chip's personal settings to every machine you connect to
-      --
-      -- 1. Ensures that distant servers terminate with no connections
-      -- 2. Provides navigation bindings for remote directories
-      -- 3. Provides keybinding to jump into a remote file's parent directory
-      ['*'] = require('distant.settings').chip_default()
+    use {
+        'chipsenkbeil/distant.nvim',
+        config = function()
+            require('distant').setup {
+                -- Applies Chip's personal settings to every machine you connect to
+                --
+                -- 1. Ensures that distant servers terminate with no connections
+                -- 2. Provides navigation bindings for remote directories
+                -- 3. Provides keybinding to jump into a remote file's parent directory
+                ['*'] = require('distant.settings').chip_default()
+            }
+        end
     }
-  end
-}
 
     -- 主页插件
     use {'glepnir/dashboard-nvim'}
@@ -95,14 +95,15 @@ _.startup(function()
 
     -- 代码片段
     use { 'L3MON4D3/LuaSnip',
-    requires = { 'rafamadriz/friendly-snippets' }
-  }
-  use { "saadparwaiz1/cmp_luasnip" }
+    requires = { 'rafamadriz/friendly-snippets' }   }
+    use { "saadparwaiz1/cmp_luasnip" }
 
     -- 记录树 
-  use { "mbbill/undotree"}
+    use { "mbbill/undotree"}
 
-  -- 补全括号
-  use {"windwp/nvim-autopairs"}
-  
+    -- 补全括号
+    use {"windwp/nvim-autopairs"}
+    -- markdown预览
+    use {"iamcco/markdown-preview.nvim", run = "cd app && yarn install"}
+
 end)

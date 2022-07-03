@@ -1,3 +1,7 @@
+-- 快捷键映射
+require("keybindings")
+-- 基础设置
+require('basic')
 -- 其他配置
 require("gwoo.other")
 -- packer 插件管理器
@@ -29,3 +33,5 @@ require("gwoo.notify-config")
 require("gwoo.luasnip-config")
 -- 补全括号
 require("gwoo.autopairs-config")
+-- markdown预览
+require("gwoo.MarkdownPreview-config")
