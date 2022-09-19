@@ -52,3 +52,5 @@ map("n", "tr", ":NvimTreeToggle<cr>", opt)
 map("n", "L", ":UndotreeToggle<cr><C-w>h<C-w>k", opt)
 -- 基于首行排版
 map("n", "<leader>g", "gg=G<C-o>", opt)
+-- 全选
+map("n", "<C-a>", "ggVG", opt)
