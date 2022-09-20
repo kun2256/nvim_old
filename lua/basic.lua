@@ -41,9 +41,9 @@ vim.wo.wrap = false
 -- 光标在行首尾时<Left><Right>可以跳到下一行
 vim.o.whichwrap = '<,>,[,]'
 -- 允许隐藏被修改过的buffer
-vim.o.hidden = false
+vim.o.hidden = true
 -- 鼠标支持
-vim.o.mouse = "a"
+-- vim.o.mouse = "a"
 -- 禁止创建备份文件
 vim.o.backup = false
 vim.o.writebackup = false
