@@ -41,7 +41,7 @@ map("n", "<leader>d", ":AsyncTask file-build<cr>", opt)
 -- 运行
 map("n", "<leader>r", ":AsyncTask file-run<cr>", opt)
 -- python3运行
-map("n", "<leader>p", ":!python3 %<cr>", opt)
+map("n", "<leader>p", ";w:!python3 %<cr>", opt)
 
 -- 切换 buff 栏
 map("n", "b", ":BufferLinePick<cr>", opt)
