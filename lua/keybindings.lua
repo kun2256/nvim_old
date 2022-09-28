@@ -43,8 +43,8 @@ map("n", "<leader>r", ":AsyncTask file-run<cr>", opt)
 -- python3运行
 map("n", "<leader>p", ":w<cr>:!python3 %<cr>", opt)
 
--- 切换 buff 栏
-map("n", "b", ":BufferLinePick<cr>", opt)
+-- 切换 buff 栏 
+map("n", "B", ":BufferLinePick<cr>", opt)
 -- 删除 buff 栏
 map("n", "cb", ":BufferLinePickClose<cr>", opt)
 
@@ -56,3 +56,6 @@ map("n", "L", ":UndotreeToggle<cr><C-w>h<C-w>k", opt)
 map("n", "<leader>g", "gg=G<C-o>", opt)
 -- 全选
 map("n", "<C-a>", "ggVG", opt)
+-- 快捷引号包裹
+map("n","<leader>'", "ea'<esc>hbi'<esc>", opt)
+map("n",'<leader>"', 'ea"<esc>hbi"<esc>', opt)
