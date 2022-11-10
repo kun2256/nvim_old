@@ -49,6 +49,14 @@ let g:asyncrun_trim = 1
 let g:asyncrun_open = 1
 let g:asynctasks_term_reuse=1
 
+" 空格补全
+let g:formatdef_my_c = '"astyle --indent=spaces=2 -C -p -A2 -f -xg -xW -xe"'
+let g:formatters_c = ['my_c']
+let g:formatters_cpp= ['my_c']
+let g:autoformat_verbosemode=1
+au BufWrite *.c,*.cpp,*.java,*.h :Autoformat
+
+
 " nmap <leader>r <Cmd>AsyncTask file-run<cr>
 " nmap <leader>d <Cmd>AsyncTask file-build<cr>
 " nmap <leader>w <Cmd>w<cr>

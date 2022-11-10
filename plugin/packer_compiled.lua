@@ -260,6 +260,11 @@ _G.packer_plugins = {
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-autoformat"] = {
+    loaded = true,
+    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/vim-autoformat",
+    url = "https://github.com/vim-autoformat/vim-autoformat"
+  },
   ["vim-clap"] = {
     loaded = true,
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/vim-clap",
@@ -269,11 +274,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
-  },
-  ["winbar.nvim"] = {
-    loaded = true,
-    path = "/Users/ouyangkun/.local/share/nvim/site/pack/packer/start/winbar.nvim",
-    url = "https://github.com/fgheng/winbar.nvim"
   }
 }
 

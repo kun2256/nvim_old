@@ -106,4 +106,7 @@ _.startup(function()
     -- markdown预览
     use {"iamcco/markdown-preview.nvim", run = "cd app && yarn install"}
 
+    -- 自动空格
+    use {"vim-autoformat/vim-autoformat"}
+
 end)
